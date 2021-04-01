@@ -1,0 +1,47 @@
+// Блок контактов Телефон и mail
+
+.contakt__list {
+  display: flex;
+  & .contakt__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.contakt__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: $text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contakt__icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contakt__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:hover .contakt__icon-smartphone,
+  &:focus .contakt__icon-smartphone,
+  &:hover .contakt__icon-mail,
+  &:focus .contakt__icon-mail {
+    fill: $accent-color;
+  }
+}

@@ -1,0 +1,52 @@
+// Секция employment
+.employment {
+  padding-bottom: 94px;
+}
+.employment__title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
+.employment__list {
+  display: flex;
+  justify-content: center;
+  & .employment__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.employment__item {
+  position: relative;
+  z-index: 1;
+}
+
+.employment__subject {
+  position: absolute;
+  /* z-index: 1; */
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin: 0;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color1;
+}

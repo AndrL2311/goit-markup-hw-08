@@ -1,0 +1,19 @@
+// Блок логотипа
+.logo {
+  display: block;
+  font-family: $secondari-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accent-color;
+}
+.logo__box {
+  color: $color2;
+  &--inverse {
+    color: $color1;
+  }
+}
+// Микс page-footer и logo
+.page-footer__logo {
+  margin-bottom: 20px;
+}

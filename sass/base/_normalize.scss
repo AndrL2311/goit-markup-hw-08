@@ -1,0 +1,35 @@
+/* Глобальный  border-box*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Конец глобальный  border-box*/
+
+/* Базовый сброс */
+.link {
+  text-decoration: none;
+}
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/* Конец базовый сброс */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: $main-fond;
+  background-color: $color1;
+}

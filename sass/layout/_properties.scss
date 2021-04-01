@@ -1,0 +1,50 @@
+// Секция properties
+.properties {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.properties__list {
+  display: flex;
+  & .properties__item:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+.properties__box {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: $button-background-color;
+  margin-bottom: 30px;
+}
+.properties__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  fill: $title-color;
+}
+
+.feature__title {
+  margin-top: 0px;
+  margin-bottom: 10;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.feature__text {
+  width: 270px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}

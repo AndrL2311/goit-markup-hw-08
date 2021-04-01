@@ -1,0 +1,10 @@
+// Адресный блок
+.address-block__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $adress-color;
+  .address-block__item:first-child & {
+    color: $color1;
+  }
+}
