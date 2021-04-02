@@ -4,7 +4,26 @@
   align-items: center;
   margin-right: auto;
 }
+// Мобильное меню
+.navigation__button-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 
+.navigation__button-menu .navigation__icon-cross {
+  display: none;
+}
+.navigation__button-menu.is-open .navigation__icon-cross {
+  display: block;
+}
+.navigation__button-menu.is-open .navigation__icon-menu {
+  display: none;
+}
+
+// ---------------------------------------
 .navigation__list {
   display: flex;
   margin-left: 93px;
