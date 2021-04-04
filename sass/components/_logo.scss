@@ -19,8 +19,12 @@
   }
 }
 // Микс page-footer и logo
-// .page-footer__logo {
-//   @media screen and (min-width: 1200px) {
-//     margin-bottom: 20px;
-//   }
-// }
+.page-footer__logo {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
