@@ -1,22 +1,47 @@
 // Секция properties
 .properties {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .properties__list {
   display: flex;
-  & .properties__item:not(:first-child) {
-    margin-left: 20px;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    & .properties__item:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+.properties__item {
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 30px) / 1);
+  margin: 15px;
+
+  @media screen and (min-width: 767px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 
 .properties__box {
   display: flex;
-  height: 120px;
   justify-content: center;
   align-items: center;
   background-color: $button-background-color;
+
+  max-height: 120px;
   margin-bottom: 30px;
 }
 .properties__icon {
@@ -29,17 +54,20 @@
 .feature__title {
   margin-top: 0px;
   margin-bottom: 10;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-color;
+  text-align: center;
+  @media screen and (min-width: 767px) {
+    text-align: left;
+  }
 }
 
 .feature__text {
-  width: 270px;
+  width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
 

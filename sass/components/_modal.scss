@@ -2,6 +2,7 @@
 .backdrop {
   position: fixed;
   z-index: 2;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100vw;
@@ -23,8 +24,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
+  max-height: 581px;
   background-color: $color1;
   /* border: 1px solid rgba(0, 0, 0, 0.1); */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -75,7 +76,7 @@
   margin: 0;
   padding: 12px 12px 12px 42px;
 
-  height: 40px;
+  max-height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -125,7 +126,7 @@
   margin: 0;
   padding: 12px;
 
-  height: 120px;
+  max-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
