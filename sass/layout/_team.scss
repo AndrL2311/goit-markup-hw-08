@@ -1,19 +1,28 @@
 // Секция team
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 .team__item {
   background: var(--color1);
@@ -25,8 +34,29 @@
 .team__list {
   display: flex;
   justify-content: center;
-  & .team__item:not(:first-child) {
-    margin-left: 30px;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    & .team__item:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.team__item {
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 30px) / 1);
+  margin: 15px;
+
+  @media screen and (min-width: 767px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -42,13 +72,14 @@
   color: var(--title-color);
 }
 .team__box {
-  width: 270px;
-  padding: 30px 32px;
-
-  /* background: var(--color1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .team__img {
   margin-top: 0px;
