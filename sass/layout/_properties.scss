@@ -14,9 +14,10 @@
   margin: -15px;
 
   @media screen and (min-width: 1200px) {
+    margin: 0px;
     flex-wrap: nowrap;
     & .properties__item:not(:first-child) {
-      margin-left: 20px;
+      margin-left: 30px;
     }
   }
 }
@@ -30,8 +31,7 @@
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 0px;
-    margin-top: 0px;
+    margin: 0px;
   }
 }
 
