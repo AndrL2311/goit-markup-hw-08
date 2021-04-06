@@ -1,11 +1,18 @@
 // Секция header
 .page-header {
   // position: relative;
+
   border: 1px solid #ececec;
 }
 
 .page-header__box {
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
