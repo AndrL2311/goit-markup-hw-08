@@ -1,18 +1,39 @@
 // Секция portfolio
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filters__list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-left: -8px;
+  margin-top: -15px;
 
-  & .filters__item:not(:first-child) {
-    margin-left: 8px;
+  // & .filters__item:not(:first-child) {
+  //   margin-left: 8px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
+}
+
+.filters__item {
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 .project__list {
@@ -24,13 +45,18 @@
 }
 
 .project__item {
-  flex-basis: calc((100% - 90px) / 3);
-  //   width: 370px;
-
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc((100% - 30px) / 1);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+    //   width: 370px;
+  }
 }
 
 .project__link {
